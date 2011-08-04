@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Add Movie</title>
+		<meta name="description" content="Add Movie Page" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+	</head>
+	<body>
+		<h1>Add Movie</h1>
+		<form action="" method="post">
+			<fieldset>
+				<legend>Select Category</legend>
+				<label for="category">Categories: </label>
+				<select id="category">
+					<optgroup label="">
+						<option value="comedy">Comedy</option>
+						<option value="drama">Drama</option>
+						<option value="action">Action</option>
+						<option value="horror">Horror</option>
+						<option value="suspense">Suspense</option>
+						<option value="documentary">Documentary</option>
+						<option value="other">Other</option>
+					</optgroup>
+				</select>
+				</label>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Movie Information</legend>
+				<ul>
+					<li><label for="title">Movie Title: </label><input type="text" id="title" /></li>
+					<li><label for="actor">Main Actor/Actress: </label><input type="text" id="actor" /></li>
+					<li><label for="rating">Rating: </label><input type="range" min="1" max="5" id="rating" /></li>
+					<li><label for="family">Is this a family movie? </label><input type="checkbox" id="family" /></li>
+					<li><label for="release">Release Date: </label><input type="date" min="1900-01-01" max="" placeholder="2011-08-04" required aria-required="true" id="title" /></li>
+				</ul>
+			</fieldset>
+		</form>
+	</body>
+</html>
