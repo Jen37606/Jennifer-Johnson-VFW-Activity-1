@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!-- 
+Jennifer Johnson
+VFW Project 1 - Add Movies to Movie Collection Library
+Term: 1107
+
+-->
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -11,11 +17,11 @@
 		<h1>Add Movie</h1>
 		<form action="" method="post">
 			<fieldset>
-				<legend>Select Category</legend>
+				<legend>Select Category</legend> <!-- Drop down box to select a movie category -->
 				<label for="category">Categories: </label>
-				<select id="category">
+				<select id="category"> <!-- select -->
 					<optgroup label="">
-						<option value="comedy">Comedy</option>
+						<option value="comedy">Comedy</option> <!-- options -->
 						<option value="drama">Drama</option>
 						<option value="action">Action</option>
 						<option value="horror">Horror</option>
@@ -31,27 +37,27 @@
 				<legend>Movie Information</legend>
 				<ul>
 					<li><label for="title">Movie Title:</label><br />
-					<input type="text" id="title" /></li>
+					<input type="text" id="title" /></li> <!-- text field -->
 					<li><label for="actor">Main Actor/Actress:</label><br />
-					<input type="text" id="actor" /></li>
+					<input type="text" id="actor" /></li> <!-- text field -->
 					<li><label for="rating">Rating:</label><br />
-					<input type="range" min="1" max="5" id="rating" /></li>
+					<input type="range" min="1" max="5" id="rating" /></li> <!-- range field -->
 					<li><label for="favorites">Add to favorites?</label><br />
-					<input type="checkbox" id="favorites" /></li>
+					<input type="checkbox" id="favorites" /></li> <!-- checkbox -->
 					<li><label for="family">Is this a family movie?</label><br />
 						<ul>
-							<li><label for="yes">Yes </label><input type="radio" checked value="yes" id="yes" name="family" /></li>
-							<li><label for="no">No </label><input type="radio" value="no" id="no" name="family" /></li>
+							<li><label for="yes">Yes </label><input type="radio" checked value="yes" id="yes" name="family" /></li> <!-- radio button yes -->
+							<li><label for="no">No </label><input type="radio" value="no" id="no" name="family" /></li> <!-- radio button no -->
 						</ul>
 					</li>
 					<li><label for="release">Release Date:</label><br />
-					<input type="date" min="1900-01-01" max="" placeholder="2011-08-04" required aria-required="true" id="title" /></li>
+					<input type="date" min="1900-01-01" max="" placeholder="2011-08-04" required aria-required="true" id="title" /></li> <!-- date field -->
 					<li><label for="description">Movie Description: </label><br />
-					<textarea></textarea></li>
+					<textarea></textarea></li> <!-- textarea -->
 				</ul>
 			</fieldset>
 			<br />
-			<input type="button" value="Add Movie To Collection" />
+			<input type="button" value="Add Movie To Collection" /> <!-- button -->
 		</form>
 	</body>
 </html>
