@@ -26,17 +26,32 @@
 				</select>
 				</label>
 			</fieldset>
-			
+			<br />
 			<fieldset>
 				<legend>Movie Information</legend>
 				<ul>
-					<li><label for="title">Movie Title: </label><input type="text" id="title" /></li>
-					<li><label for="actor">Main Actor/Actress: </label><input type="text" id="actor" /></li>
-					<li><label for="rating">Rating: </label><input type="range" min="1" max="5" id="rating" /></li>
-					<li><label for="family">Is this a family movie? </label><input type="checkbox" id="family" /></li>
-					<li><label for="release">Release Date: </label><input type="date" min="1900-01-01" max="" placeholder="2011-08-04" required aria-required="true" id="title" /></li>
+					<li><label for="title">Movie Title:</label><br />
+					<input type="text" id="title" /></li>
+					<li><label for="actor">Main Actor/Actress:</label><br />
+					<input type="text" id="actor" /></li>
+					<li><label for="rating">Rating:</label><br />
+					<input type="range" min="1" max="5" id="rating" /></li>
+					<li><label for="favorites">Add to favorites?</label><br />
+					<input type="checkbox" id="favorites" /></li>
+					<li><label for="family">Is this a family movie?</label><br />
+						<ul>
+							<li><label for="yes">Yes </label><input type="radio" checked value="yes" id="yes" name="family" /></li>
+							<li><label for="no">No </label><input type="radio" value="no" id="no" name="family" /></li>
+						</ul>
+					</li>
+					<li><label for="release">Release Date:</label><br />
+					<input type="date" min="1900-01-01" max="" placeholder="2011-08-04" required aria-required="true" id="title" /></li>
+					<li><label for="description">Movie Description: </label><br />
+					<textarea></textarea></li>
 				</ul>
 			</fieldset>
+			<br />
+			<input type="button" value="Add Movie To Collection" />
 		</form>
 	</body>
 </html>
